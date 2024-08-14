@@ -6,9 +6,10 @@ import {
   NavbarMenu,
   NavbarContent,
   NavbarItem,
-  Link,
   Button,
 } from "@nextui-org/react";
+
+import { Link } from "react-router-dom";
 
 import React from "react";
 
@@ -38,17 +39,17 @@ const NavBar = () => {
       <NavbarContent className="hidden sm:flex gap-8 " justify="center">
         <NavbarItem>
           <Link
+            to="/"
             className="text-white uppercase text-sm font-semibold"
-            color="foreground"
-            href="#"
+            aria-current="page"
           >
-            Noticias
+            Inicio
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
+        <NavbarItem>
           <Link
+            to="/personajes"
             className="text-white uppercase text-sm font-semibold"
-            href="#"
             aria-current="page"
           >
             Personajes
