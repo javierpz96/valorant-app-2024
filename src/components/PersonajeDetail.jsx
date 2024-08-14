@@ -59,11 +59,11 @@ const PersonajeDetail = () => {
           <img className="md:w-full" src={detallePersonaje?.fullPortrait} />
         </div>
       </div>
-      <div className="bg-[#0a1016] md:pl-8 flex flex-col gap-6 justify-center items-center pt-10 pb-10">
+      <div className="bg-[#0a1016] md:pl-8 flex flex-col gap-8 justify-center items-center pt-10 pb-10">
         <h1 className="md:text-gigantMobile text-xl text-white font-bold">
           SPECIAL ABILITIES
         </h1>
-        <div className="flex">
+        <div className="flex gap-4">
           {detallePersonaje?.abilities?.map((item, index) => {
             const isSelected =
               habilidadSeleccionada?.description === item.description;
@@ -81,12 +81,12 @@ const PersonajeDetail = () => {
         </div>
 
         {habilidadSeleccionada && (
-          <div className="text-white flex flex-col gap-4 pl-4 pr-4 md:pb-0 pb-20">
+          <div className="text-white flex flex-col gap-4 pl-4 pr-4 md:pb-0">
             <div class="border-t border-gray-300 my-4"></div>
             <h4 className="text-xl font-bold">
               {habilidadSeleccionada.displayName}
             </h4>
-            <p className="md:text-sm text-smMobile h-16">
+            <p className="md:text-sm text-smMobile h-full">
               {habilidadSeleccionada.description}
             </p>
           </div>
