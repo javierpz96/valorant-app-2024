@@ -1,5 +1,6 @@
 import "./inicio.css";
 import CardNew from "./CardNew";
+import { Link } from "react-router-dom";
 
 const Inicio = () => {
   return (
@@ -13,9 +14,11 @@ const Inicio = () => {
             class="w-[230px] md:w-[430px]"
             src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/7b76209193f1bfe190d3ae6ef8728328870be9c3-736x138.png?auto=format&fit=fill&q=80&w=300"
           ></img>
-          <button className="text-white button md:mt-10 mt-8 md:p-5 p-3 text-sm  font-medium">
-            JUGAR GRATIS
-          </button>
+          <a href="https://playvalorant.com/es-es/platform-selection/">
+            <button className="text-white button md:mt-10 mt-8 md:p-5 p-3 text-sm  font-medium">
+              JUGAR GRATIS
+            </button>
+          </a>
         </div>
         <div class="relative w-full h-full">
           <div class="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-10"></div>
@@ -121,9 +124,11 @@ const Inicio = () => {
             oportunidades para sobresalir. Ningún agente se jugará igual, ni
             ningún momento memorable se verá igual.
           </p>
-          <button className="button-white mt-10 w-full md:w-auto">
-            VER TODOS LOS AGENTES
-          </button>
+          <Link to="/personajes">
+            <button className="button-white mt-10 w-full md:w-auto">
+              VER TODOS LOS AGENTES
+            </button>
+          </Link>
         </div>
         <div className="md:w-[50%] flex justify-center">
           <img
@@ -146,9 +151,11 @@ const Inicio = () => {
             jugadas espectaculares y momentos decisivos. Haz la obra que otros
             imitarán en los años venideros.
           </p>
-          <button className="button mt-10 w-full md:w-auto">
-            VER TODOS LOS MAPAS
-          </button>
+          <Link to="/mapas">
+            <button className="button mt-10 w-full md:w-auto">
+              VER TODOS LOS MAPAS
+            </button>
+          </Link>
         </div>
         <div className="md:w-[40%]">
           <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/65c45804e00ee97977b6eef06da370543968d161-1232x1232.png?auto=format&fit=fill&q=80&w=728"></img>

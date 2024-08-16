@@ -64,15 +64,15 @@ const NavBar = () => {
       <NavbarContent justify="end">
         <NavbarItem className="gap-4 flex justify-center items-center">
           <i className="fa-solid fa-globe text-md text-white"></i>
-          <Button
-            className="text-white font-semibold"
-            as={Link}
-            color="danger"
-            to="/play"
-            variant="flat"
-          >
-            JUGAR
-          </Button>
+          <a href="https://playvalorant.com/es-es/platform-selection/">
+            <Button
+              className="text-white font-semibold"
+              color="danger"
+              variant="flat"
+            >
+              JUGAR
+            </Button>
+          </a>
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
